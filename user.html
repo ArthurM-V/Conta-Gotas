@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conta-Gotas🌢</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/pixil-frame-0.png" />
+  </head>
+  <body>
+    <div class="main-content">
+      <div class="mc-nav">
+        <h1 id="header">Área do Usuário</h1>
+      </div>
+      <div class="mc-main">
+        <div class="mc--1">
+          <h1 id="mc-header">Meta do dia:</h1>
+          <div class="meta-cont">
+            <h1 id="meta">2.450mL</h1>
+            <h1 id="progress">0 mL</h1>
+          </div>
+        </div>
+        <div class="mc--2">
+          <div id="location"></div>
+          <div id="img"></div>
+          <div id="info"></div>
+        </div>
+        <div class="mc--3">
+          <h1>Tempo até o próximo alarme:</h1>
+          <div class="clock-cont">
+            <div class="clock-wrapper">
+              <div class="clock">
+                <div class="clock-face">
+                  <div class="hand hour-hand"></div>
+                  <div class="hand min-hand"></div>
+                  <div class="hand second-hand"></div>
+                </div>
+              </div>
+            </div>
+            <div id="timer">
+              <div class="timer-cont">
+                <h1 id="timer-data">02:34:06</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mc--4">
+          <div class="hint-container">
+            <h1>Dica!</h1>
+            <p>
+              Antes mesmo do café da manhã, beba um copo de água para ativar o
+              metabolismo e repor os líquidos perdidos durante o sono.
+            </p>
+          </div>
+        </div>
+        <div class="mc--5">
+          <div>
+            <h1 id="dia-extenso">Terça-feira</h1>
+          </div>
+          <div>
+            <h1 id="num-diames">28/05</h1>
+          </div>
+        </div>
+        <div class="mc--6">
+          <div class="mc-cont">
+            <h1 id="title">Suas anotações</h1>
+            <button id="anota">+</button>
+          </div>
+          <div class="sticky-table">
+            <div id="sticky-note"></div>
+          </div>
+        </div>
+      </div>
+      <div class="overlay"></div>
+      <div class="info-screen hidden">
+        <div class="info-header">
+          <h1>Bem-vindo(a) à área do usuário!</h1>
+          <h2>
+            Aqui, você terá acesso a todas as ferramentas do Conta-Gotas e
+            poderá encontrar, em um só lugar, todas as informações essenciais
+            para cuidar da sua hidratação.
+          </h2>
+          <button>Entendi!</button>
+          <div class="plus-info">
+            <h1>Completar informações!</h1>
+            <h2>
+              Olá! Checamos aqui e parece que existem informações pendentes!
+              Para que as ferramentas tenham ainda mais eficiência, precisamos
+              que você nos informe mais algumas coisas sobre você.
+            </h2>
+            <button>Clique aqui</button>
+          </div>
+          <div class="plus-form">
+            <div class="pf--1">
+              <label for="gender">Selecione seu sexo:</label>
+              <select name="gender" id="sexo">
+                <option value="null"></option>
+                <option value="H">Homem</option>
+                <option value="M">Mulher</option>
+              </select>
+            </div>
+            <div class="pf--2">
+              <label for="conf-peso">Seu peso:</label>
+              <input type="number" placeholder="Ex: 62.5 Kg" />
+            </div>
+          </div>
+          <div class="pf--3">
+            <label for="conf-cdd"
+              >Confirme a cidade e estado em que vive:</label
+            >
+            <input type="text" placeholder="Ex: Campinas-SP" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
