@@ -31,22 +31,36 @@
         <div class="calc-data">
           <div class="calc-input">
             <label for="peso">Informe seu peso:</label>
-            <input type="number" name="peso" placeholder="Ex: 65.2 Kg" />
+            <input
+              type="number"
+              name="peso"
+              placeholder="Ex: 65.2 Kg"
+              id="peso-info"
+            />
 
-            <label for="cidade">Informe a cidade e estado em que vive</label>
-            <input type="text" name="cidade" placeholder="Ex: Campinas-SP" />
+            <label for="cidade" class="hidden"
+              >Informe a cidade e estado em que vive</label
+            >
+            <input
+              type="text"
+              name="cidade"
+              placeholder="Ex: Campinas-SP"
+              class="hidden"
+            />
           </div>
+          <div class="calc-result"><h1 id="resultado">x</h1></div>
           <div class="calc-btn">
-            <button id="Calcular">Calcular</button>
+            <button id="calcular">Calcular</button>
           </div>
         </div>
       </div>
     </div>
-    <div class="result-screen">
+    <div class="result-screen hidden">
       <div class="result-container">
         <h1 id="result-txt">x</h1>
         <div class="alarme-sugest"></div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

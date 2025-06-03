@@ -354,6 +354,19 @@ form {
   transition: 0.4s;
 }
 
+.calc-result {
+  width: 100%;
+  min-height: 2vh;
+}
+
+#resultado {
+  color: var(--white);
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 header {
   width: 100%;
   min-height: 5vh;
