@@ -945,7 +945,7 @@ header #header {
   }
   .calc-cont {
     width: 80vw;
-    height: 90vh;
+    max-height: 90vh;
   }
   .calc-data {
     align-items: center;
