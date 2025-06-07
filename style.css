@@ -21,8 +21,8 @@ html {
   --grad-bot: #3a25af;
   --pink-top: #ff42a0;
   --pink-bot: #eb1052;
-  --green-top: #11e156;
-  --green-bot: #20652e;
+  --green-top: #15b94c;
+  --green-bot: #08502c;
   --purple-top: #9950b8;
   --purple-bot: #431178;
   --black: #121212;
@@ -890,19 +890,47 @@ header #header {
 @media only screen and (max-width: 600px) {
   article {
     padding: 0;
-    background: linear-gradient(125deg, var(--grad-top), var(--grad-bot));
+    background: linear-gradient(90deg, var(--grad-top), var(--grad-bot));
   }
   .hero-flex {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    border: none;
     gap: 0.75rem;
-    padding: 1.25rem;
+    padding: 0.5rem;
   }
   .hf {
     width: 100%;
     min-height: 2vh;
     margin-top: 0;
     box-shadow: none;
+  }
+  .hf--1 {
+    background: linear-gradient(135deg, var(--green-top), var(--green-bot));
+    border: none;
+    color: var(--white);
+  }
+  .hf--2 {
+    background: linear-gradient(135deg, var(--purple-top), var(--purple-bot));
+    border: none;
+    color: var(--white);
+  }
+  .hf--3 {
+    background: linear-gradient(135deg, var(--pink-top), var(--pink-bot));
+    border: none;
+    color: var(--white);
+  }
+  main {
+    border-radius: 0;
+    border: none;
+  }
+  footer {
+    padding: 0;
+  }
+  .final-call {
+    width: 100%;
+    border: none;
+    border-radius: 0;
   }
 }
