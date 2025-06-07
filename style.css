@@ -234,11 +234,13 @@ button {
 }
 
 .final-call button {
-  border: 1px solid var(--white);
+  border: 0.2rem solid var(--white);
   width: 8vw;
   border-radius: 20px;
   background: var(--fourth-color);
   width: 100%;
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 
 .final-call button:hover {
@@ -932,5 +934,24 @@ header #header {
     width: 100%;
     border: none;
     border-radius: 0;
+  }
+  .final-call button {
+    width: 24vw;
+    font-size: 1.8rem;
+  }
+  .calc-sec {
+    position: relative;
+    min-height: 92.9vh;
+  }
+  .calc-cont {
+    width: 80vw;
+    height: 90vh;
+  }
+  .calc-data {
+    align-items: center;
+    justify-content: center;
+  }
+  #calcular {
+    width: 24vw;
   }
 }
