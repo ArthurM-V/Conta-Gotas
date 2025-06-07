@@ -19,6 +19,12 @@ html {
   --grad-med: #56fce0;
   --grad-mid: #5b548a;
   --grad-bot: #3a25af;
+  --pink-top: #ff42a0;
+  --pink-bot: #eb1052;
+  --green-top: #11e156;
+  --green-bot: #20652e;
+  --purple-top: #9950b8;
+  --purple-bot: #431178;
   --black: #121212;
   --white: #f4f4f4;
   --lightgray: #e4e4e4;
@@ -887,12 +893,16 @@ header #header {
     background: linear-gradient(125deg, var(--grad-top), var(--grad-bot));
   }
   .hero-flex {
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    gap: 0.75rem;
+    padding: 1.25rem;
   }
   .hf {
-    width: 16rem;
+    width: 100%;
     min-height: 2vh;
     margin-top: 0;
+    box-shadow: none;
   }
 }
