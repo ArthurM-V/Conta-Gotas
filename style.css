@@ -880,3 +880,19 @@ header #header {
 .hidden {
   display: none;
 }
+
+@media only screen and (max-width: 600px) {
+  article {
+    padding: 0;
+    background: linear-gradient(125deg, var(--grad-top), var(--grad-bot));
+  }
+  .hero-flex {
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .hf {
+    width: 16rem;
+    min-height: 2vh;
+    margin-top: 0;
+  }
+}
