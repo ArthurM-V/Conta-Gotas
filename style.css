@@ -1103,8 +1103,8 @@ header #header {
   }
 
   .cad-sec {
-    width: 70vw;
-    height: 67vh;
+    width: 85vw;
+    min-height: 58vh;
     padding: 2rem;
   }
 
