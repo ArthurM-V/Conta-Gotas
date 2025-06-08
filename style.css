@@ -1113,12 +1113,12 @@ header #header {
   }
 
   .cd-input input {
-    width: 55vw;
+    width: 75vw;
     font-size: 1.5rem;
   }
 
   #cd-signup,
   #cd-cancel {
-    width: 20vw;
+    width: 30vw;
   }
 }
