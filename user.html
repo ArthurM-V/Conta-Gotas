@@ -9,10 +9,10 @@
   </head>
   <body>
     <div class="main-content">
-      <div class="mc-nav">
+      <div class="mc-nav hidden">
         <h1 id="header">Área do Usuário</h1>
       </div>
-      <div class="mc-main">
+      <div class="mc-main hidden">
         <div class="mc--1">
           <h1 id="mc-header">Meta do dia:</h1>
           <div class="meta-cont">
@@ -72,43 +72,49 @@
         </div>
       </div>
       <div class="overlay"></div>
-      <div class="info-screen hidden">
-        <div class="info-header">
-          <h1>Bem-vindo(a) à área do usuário!</h1>
-          <h2>
-            Aqui, você terá acesso a todas as ferramentas do Conta-Gotas e
-            poderá encontrar, em um só lugar, todas as informações essenciais
-            para cuidar da sua hidratação.
-          </h2>
-          <button>Entendi!</button>
-          <div class="plus-info">
-            <h1>Completar informações!</h1>
+      <div class="info-screen">
+        <div class="info-cont">
+          <div class="info-header">
+            <h1>Bem-vindo(a) à área do usuário!</h1>
             <h2>
-              Olá! Checamos aqui e parece que existem informações pendentes!
+              Aqui, você terá acesso a todas as ferramentas do Conta-Gotas e
+              poderá encontrar, em um só lugar, todas as informações essenciais
+              para cuidar da sua hidratação.
+            </h2>
+            <h2>
               Para que as ferramentas tenham ainda mais eficiência, precisamos
               que você nos informe mais algumas coisas sobre você.
             </h2>
-            <button>Clique aqui</button>
           </div>
-          <div class="plus-form">
-            <div class="pf--1">
-              <label for="gender">Selecione seu sexo:</label>
-              <select name="gender" id="sexo">
-                <option value="null"></option>
-                <option value="H">Homem</option>
-                <option value="M">Mulher</option>
-              </select>
+          <div class="plus-info">
+            <h1>Complete suas informações!</h1>
+            <div class="plus-form">
+              <div class="pf pf--1">
+                <label for="gender">Selecione seu sexo:</label>
+                <select name="gender" id="sexo">
+                  <option value="null"></option>
+                  <option value="H">Homem</option>
+                  <option value="M">Mulher</option>
+                </select>
+              </div>
+              <div class="pf pf--2">
+                <label for="conf-peso">Seu peso:</label>
+                <input type="number" placeholder="Ex: 62.5" />
+              </div>
+              <div class="pf pf--3">
+                <label for="conf-cdd"
+                  >Confirme a cidade e estado em que vive:</label
+                >
+                <input
+                  type="text"
+                  placeholder="Ex: Campinas-SP"
+                  maxlength="40"
+                />
+              </div>
+              <div class="pf pf--4">
+                <button id="confirma">Salvar</button>
+              </div>
             </div>
-            <div class="pf--2">
-              <label for="conf-peso">Seu peso:</label>
-              <input type="number" placeholder="Ex: 62.5 Kg" />
-            </div>
-          </div>
-          <div class="pf--3">
-            <label for="conf-cdd"
-              >Confirme a cidade e estado em que vive:</label
-            >
-            <input type="text" placeholder="Ex: Campinas-SP" />
           </div>
         </div>
       </div>
