@@ -403,7 +403,7 @@ header #header {
 }
 
 .log-sec {
-  width: 55vw;
+  width: 35vw;
   height: 55vh;
   position: absolute;
   top: 50%;
@@ -513,7 +513,7 @@ header #header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 55vw;
+  width: 35vw;
   min-height: 55vh;
   background: var(--white);
   border-radius: 15px;
@@ -1009,6 +1009,9 @@ header #header {
   width: 8vw;
   height: 4vh;
   border-radius: 16px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.2em;
   border: 0.25rem solid var(--white);
 }
 
@@ -1120,5 +1123,28 @@ header #header {
   #cd-signup,
   #cd-cancel {
     width: 30vw;
+  }
+
+  .info-cont {
+    width: 85vw;
+  }
+
+  .pf--1 select {
+    width: 14vw;
+    outline: none;
+  }
+  .pf--2 input {
+    width: 14vw;
+  }
+  .pf--3 input {
+    width: 35vw;
+  }
+
+  #confirma {
+    width: 24vw;
+    height: 4.5vh;
+    padding: 0.25rem;
+    font-weight: bold;
+    font-size: 1.5rem;
   }
 }
