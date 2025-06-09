@@ -1279,7 +1279,7 @@ header #header {
     border-top: 0.1rem solid var(--white);
   }
   #timer-data {
-    font-size: 4.5rem;
+    font-size: 5rem;
     text-align: right;
   }
   .mc--4 {
