@@ -1280,6 +1280,7 @@ header #header {
   }
   #timer-data {
     font-size: 4.5rem;
+    text-align: right;
   }
   .mc--4 {
     width: 44%;
