@@ -1278,6 +1278,9 @@ header #header {
   .clock-cont {
     border-top: 0.1rem solid var(--white);
   }
+  #timer-data {
+    font-size: 4.5rem;
+  }
   .mc--4 {
     width: 44%;
     min-height: 25vh;
