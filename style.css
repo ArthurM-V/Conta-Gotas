@@ -19,6 +19,7 @@ html {
   --grad-med: #56fce0;
   --grad-mid: #5b548a;
   --grad-bot: #3a25af;
+  --blue: #0e74e9;
   --pink-top: #ff42a0;
   --pink-bot: #eb1052;
   --green-top: #15b94c;
@@ -1146,5 +1147,97 @@ header #header {
     padding: 0.25rem;
     font-weight: bold;
     font-size: 1.5rem;
+  }
+  .main-content {
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1.5rem;
+  }
+  .mc-nav {
+    margin-top: 5px;
+    width: 95vw;
+    min-height: 2vh;
+    border-radius: 16px;
+    font-size: 2rem;
+    background-color: var(--blue);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  }
+  .mc-nav #header {
+    color: var(--white);
+  }
+  .mc-main {
+    padding: 0;
+    gap: 0;
+    gap: 1.5rem;
+  }
+  .mc--1 {
+    width: 98%;
+    min-height: 8vh;
+    border-radius: 16px;
+    border: 0.25rem solid var(--blue);
+    border-bottom: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  }
+  #mc-header {
+    font-size: 2.5rem;
+    background-color: var(--blue);
+  }
+  .meta-cont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  #meta,
+  #progress {
+    font-size: 5rem;
+  }
+  .mc--2 {
+    width: 98%;
+    min-height: 5vh;
+    border-radius: 16px;
+    background: var(--blue);
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+  .mc--3 {
+    width: 98%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  }
+  .clock-cont {
+    border-top: 0.1rem solid var(--white);
+  }
+  .mc--4 {
+    width: 44%;
+    min-height: 25vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    background: linear-gradient(135deg, var(--purple-top), var(--purple-bot));
+  }
+  .hint-container h1 {
+    color: var(--white);
+    border-bottom: 0.15rem solid var(--white);
+  }
+  .mc--5 {
+    width: 45%;
+    min-height: 25vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    padding: 1.25rem;
+    background: linear-gradient(145deg, var(--pink-top), var(--pink-bot));
+  }
+  #dia-extenso {
+    font-size: 2.5rem;
+  }
+  #num-diames {
+    font-size: 6rem;
+  }
+  .mc--6 {
   }
 }
