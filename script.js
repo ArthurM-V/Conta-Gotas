@@ -163,6 +163,59 @@ function setDate() {
 }
 setInterval(setDate, 1000);
 
+let segundosRestantes = 2 * 60 * 60; // 2 horas em segundos
+
+function formatarTempo(segundosTotais) {
+  const horas = Math.floor(segundosTotais / 3600);
+  const minutos = Math.floor((segundosTotais % 3600) / 60);
+  const segundos = segundosTotais % 60;
+
+  return [
+    horas.toString().padStart(2, "0"),
+    minutos.toString().padStart(2, "0"),
+    segundos.toString().padStart(2, "0"),
+  ].join(":");
+}
+
+const elementoTimer = document.getElementById("timer-data");
+
+// Atualiza o texto inicial
+elementoTimer.textContent = formatarTempo(segundosRestantes);
+
+const cronometro = setInterval(() => {
+  segundosRestantes--;
+
+  if (segundosRestantes >= 0) {
+    elementoTimer.textContent = formatarTempo(segundosRestantes);
+  } else {
+    clearInterval(cronometro);
+    elementoTimer.textContent = "00:00:00";
+    // Você pode adicionar uma ação aqui, como um alerta ou som
+    alert("Tempo esgotado!");
+  }
+}, 1000);
+
+const diasSemana = [
+  "Domingo",
+  "Segunda-feira",
+  "Terça-feira",
+  "Quarta-feira",
+  "Quinta-feira",
+  "Sexta-feira",
+  "Sábado",
+];
+
+const hoje = new Date();
+
+// Dia da semana por extenso
+const nomeDia = diasSemana[hoje.getDay()];
+document.getElementById("dia-extenso").textContent = nomeDia;
+
+// Data no formato dd/mm
+const dia = hoje.getDate().toString().padStart(2, "0");
+const mes = (hoje.getMonth() + 1).toString().padStart(2, "0");
+document.getElementById("num-diames").textContent = `${dia}/${mes}`;
+
 salvaInfo.addEventListener("click", () => {
   checkWeather(cityChoice.value);
   calcQuant(peso.value);
