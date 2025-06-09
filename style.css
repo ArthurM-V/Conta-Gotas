@@ -771,6 +771,12 @@ header #header {
   transform: all 0.05s;
   transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
 }
+.second-hand {
+  height: 4px;
+}
+.min-hand {
+  height: 6px;
+}
 
 #timer {
   width: 100%;
@@ -913,6 +919,55 @@ header #header {
   background: #232323;
   border: 0.25rem solid var(--white);
   border-radius: 6px;
+  padding: 0.2rem;
+}
+
+.sticky-note h2 {
+  font-size: 1.5rem;
+  color: var(--white);
+}
+
+.create-note {
+  position: relative;
+  z-index: 10;
+  width: 85vw;
+  min-height: 52vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 0.75rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #232323;
+  border: 0.2rem solid var(--orng-top);
+  border-radius: 16px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  padding: 1rem;
+}
+
+.ct--1 {
+  width: 100%;
+  min-height: 4vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ct-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.ct--2 {
+  width: 100%;
+  min-height: 48vh;
 }
 
 #result {
@@ -928,9 +983,11 @@ header #header {
 
 .overlay {
   position: absolute;
+  top: 0%;
+  left: 0%;
   z-index: 5;
   width: 100%;
-  min-height: 100%;
+  min-height: 105%;
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(4px);
 }
@@ -1171,7 +1228,7 @@ header #header {
     outline: none;
   }
   .pf--2 input {
-    width: 14vw;
+    width: 20vw;
   }
   .pf--3 input {
     width: 35vw;

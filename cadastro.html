@@ -22,10 +22,11 @@
               type="text"
               placeholder="exemplo@gmail.com"
               name="cd-email"
+              id="cd-email"
             />
 
             <label for="user">Crie seu usuário:</label>
-            <input type="text" name="user" />
+            <input type="text" name="user" id="cd-user" />
 
             <label for="cd-senha">Crie sua senha: </label>
             <input
@@ -33,6 +34,7 @@
               name="cd-senha"
               minlength="8"
               maxlength="20"
+              id="cd-senha"
             />
 
             <label for="cd-confirma">Confirme sua senha: </label>
@@ -41,14 +43,16 @@
               name="cd-confirma"
               minlength="8"
               maxlength="20"
+              id="conf-senha"
             />
           </div>
           <div class="cd--2">
             <a href="index.html"><button id="cd-cancel">Cancelar</button></a>
-            <a href="user.html"><button id="cd-signup">Criar conta</button></a>
+            <button id="cd-signup">Criar conta</button>
           </div>
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
